@@ -1,11 +1,10 @@
+string = ""
 for i in range(1, 101):
-    if(i % 3 == 0 and i % 5 == 0):
-        print("FizzBuzz")
-        continue
+    string = ""
     if(i % 3 == 0):
-        print("Fizz")
-        continue
+        string += "Fizz"
     if(i % 5 == 0):
-        print("Buzz")
-        continue
-    print(i)
+        string += "Buzz"
+    if(string == ""):
+        string += str(i)
+    print(string)
